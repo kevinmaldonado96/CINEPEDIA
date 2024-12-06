@@ -1,0 +1,13 @@
+.option-list {
+  font-size: 1.2em;
+  color: var(--primary-color);
+}
+
+.modal-title {
+  color: var(--palette-4);
+}
+
+#title-movie{
+  font-weight: bold;
+  font-size: 1.4em;
+}

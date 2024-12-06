@@ -1,0 +1,8 @@
+.modal-header {
+  background-color: var(--primary-color);
+  color: var(--palette-1);
+}
+
+.form-group {
+  padding: 1%;
+}

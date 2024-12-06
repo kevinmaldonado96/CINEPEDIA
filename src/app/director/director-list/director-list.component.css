@@ -1,0 +1,28 @@
+.container {
+  padding: 1%;
+}
+.card-img {
+  width: 100%;
+  height: 25vh;
+  object-fit: cover;
+}
+
+.card {
+  margin: 0.5rem;
+  background-color: var(--primary-color);
+}
+
+.card-body,
+.blockquote-footer {
+  color: var(--palette-1);
+}
+
+.filters {
+  color: var(--secondary-color)
+}
+
+.pagination-button{
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--rgb-gray-text)
+}

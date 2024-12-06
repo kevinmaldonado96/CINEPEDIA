@@ -1,0 +1,56 @@
+<a class="nav-link text-white" style="--bs-text-opacity: .68;" data-bs-toggle="modal" data-bs-target="#genreModal"
+  role="button" i18n>Géneros</a>
+
+<!-- Modal Create Form-->
+<div class="modal fade" id="genreModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form [formGroup]="genreForm" (ngSubmit)="!genreForm.invalid && createGenre(genreForm.value)">
+        <div class="modal-header bg-primary-color">
+          <h1 class="modal-title text-light fs-5" id="exampleModalLabel" i18n>Crear genero</h1>
+          <button type="button" #closeBtn class="btn-close btn-close-white" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-start">
+          <!--Name-->
+          <div class="form-group mx-sm-3 mb-4">
+            <label for="name" i18n>Genero *</label>
+            <input novalidate id="type" class="form-control form-control-sm" formControlName="type"
+              placeholder="Ingresar nombre del nuevo genero" i18n-placeholder/>
+            <small class="text-danger fst-italic" *ngIf="
+                genreForm.get('type')!.hasError('required') &&
+                genreForm.get('type')!.touched
+              " i18n>
+              - El campo genero es requerido
+            </small>
+            <small class="text-danger fst-italic" *ngIf="genreForm.get('type')!.hasError('minlength')" i18n>
+              - El campo genero debe tener mas de 2 caracteres
+            </small>
+            <small class="text-danger fst-italic" *ngIf="genreForm.get('type')!.hasError('maxLength')" i18n>
+              - El campo genero no debe tener mas de 100 caracteres
+            </small>
+          </div>
+          <hr>
+          <div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" i18n>Genero</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let genre of genres">
+                  <td>{{genre.type}}</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" (click)="closeModal()" i18n>Cancelar</button>
+          <button type="submit" class="btn btn-primary-custom" [disabled]="!genreForm.valid" i18n>Crear genero</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

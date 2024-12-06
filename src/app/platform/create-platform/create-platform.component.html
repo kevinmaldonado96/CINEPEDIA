@@ -1,0 +1,56 @@
+<button i18n type="button" id="openModalCreateBtn" class="btn btn-primary-custom col-12" data-bs-toggle="modal"
+  data-bs-target="#createPlatformModal">
+  Crear Plataforma
+</button>
+
+<div class="modal fade" id="createPlatformModal" tabindex="-1" aria-labelledby="createPlatformModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form [formGroup]="platformForm" id="formCreatePlatform" (ngSubmit)="!platformForm.invalid && createPlatform(platformForm.value)">
+        <div class="modal-header bg-primary-color">
+          <h1 i18n class="modal-title text-light fs-5" id="createPlatformModalLabel">Crear Plataforma</h1>
+          <button type="button" #closeBtn class="btn-close btn-close-white" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-start">
+          <div class="form-group mx-sm-3 mb-4">
+            <label i18n for="nombreInput">Nombre</label>
+            <input type="text" class="form-control form-control-sm" id="nombreInput" formControlName="name"
+              [placeholder]="placeholderIngresarNombre">
+            <div i18n class="alert alert-danger alert-dismissible fade show"
+              *ngIf="platformForm.get('name')!.hasError('required') && platformForm.get('name')!.touched">
+              El campo nombre es requerido
+            </div>
+            <div i18n class="alert alert-danger alert-dismissible fade show"
+              *ngIf="(platformForm.get('name')!.hasError('minlength') || platformForm.get('name')!.hasError('maxlength'))">
+              El tamaño del nombre debe ser de minimo 2 y maximo 100 caracteres
+            </div>
+          </div>
+          <div class="form-group mx-sm-3 mb-4">
+            <label i18n for="fotoInput">Url</label>
+            <input type="text" class="form-control form-control-sm" id="urlInput" formControlName="url"
+            [placeholder]="placeholderIngresarUrl">
+            <div i18n class="alert alert-danger alert-dismissible fade show"
+              *ngIf="platformForm.get('url')!.hasError('required') && platformForm.get('url')!.touched">
+              El campo url es requerido
+            </div>
+            <div i18n class="alert alert-danger alert-dismissible fade show"
+              *ngIf="(platformForm.get('url')!.hasError('minlength') || platformForm.get('url')!.hasError('maxlength'))">
+              El tamaño de la url debe ser de minimo 2 y maximo 100 caracteres
+            </div>
+            <div i18n class="alert alert-danger alert-dismissible fade show"
+              *ngIf="platformForm.get('url')!.hasError('pattern')">
+              El campo url debe ser un url valida
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button i18n type="button" class="btn" (click)="closePopup()">Cerrar</button>
+          <button i18n type="submit" class="btn btn-primary-custom"
+            [disabled]="!platformForm.valid">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

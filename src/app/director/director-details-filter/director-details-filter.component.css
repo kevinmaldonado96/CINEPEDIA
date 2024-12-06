@@ -1,0 +1,11 @@
+img {
+  width: 4rem;
+  height: 4rem;
+  object-fit: cover;
+}
+
+.pagination-button{
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--rgb-gray-text)
+}

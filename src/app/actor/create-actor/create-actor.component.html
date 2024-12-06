@@ -1,0 +1,77 @@
+<button i18n type="button" id="openModalCreateBtn" class="btn btn-primary-custom col-12" data-bs-toggle="modal" data-bs-target="#createActorModal">
+  Crear Actor
+</button>
+
+<div class="modal fade" id="createActorModal" tabindex="-1" aria-labelledby="createActorModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form
+      id="formCreateActor"
+      [formGroup]="actorForm"
+      (ngSubmit)="!actorForm.invalid && createActor(actorForm.value)"
+      >
+       <div class="modal-header bg-primary-color">
+          <h1 class="modal-title text-light fs-5" id="createActorModalLabel" i18n>Crear Actor</h1>
+          <button type="button" #closeBtn class="btn-close btn-close-white" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-start">
+          <div class="form-group mx-sm-3 mb-4">
+          <label for="nombreInput" i18n>Nombre</label>
+          <input type="text" class="form-control form-control-sm" id="nombreInput" formControlName="name" [placeholder]="placeholderIngresarNombre">
+          <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="actorForm.get('name')!.hasError('required') && actorForm.get('name')!.touched">
+           El campo nombre es requerido
+         </div>
+         <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="(actorForm.get('name')!.hasError('minlength') || actorForm.get('name')!.hasError('maxlength'))">
+          El tamaño del nombre debe ser de minimo 2 y maximo 100 caracteres
+        </div>
+        </div>
+        <div class="form-group mx-sm-3 mb-4">
+          <label i18n for="fotoInput">Foto</label>
+          <input type="text" class="form-control form-control-sm" id="fotoInput" formControlName="photo" [placeholder]="placeholderIngresarFoto">
+          <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="actorForm.get('photo')!.hasError('required') && actorForm.get('photo')!.touched">
+            El campo foto es requerido
+          </div>
+          <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="(actorForm.get('photo')!.hasError('minlength') || actorForm.get('photo')!.hasError('maxlength'))">
+           El tamaño de la foto debe ser de minimo 2 y maximo 100 caracteres
+         </div>
+         <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="actorForm.get('photo')!.hasError('pattern')">
+           El campo foto debe ser un url valida
+        </div>
+        </div>
+        <div class="form-group mx-sm-3 mb-4">
+          <label i18n for="nacionalidadInput">Nacionalidad</label>
+          <input type="text" class="form-control form-control-sm" id="nacionalidadInput" formControlName="nationality" [placeholder]="placeholderIngresarNacionalidad">
+          <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="actorForm.get('nationality')!.hasError('required') && actorForm.get('nationality')!.touched">
+            El campo nacionalidad es requerido
+          </div>
+          <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="(actorForm.get('nationality')!.hasError('minlength') || actorForm.get('nationality')!.hasError('maxlength'))">
+           El tamaño de la nacionalidad debe ser de minimo 2 y maximo 100 caracteres
+         </div>
+        </div>
+        <div class="form-group mx-sm-3 mb-4">
+          <label i18n for="fechaNacimientoInput">Fecha de nacimiento</label>
+          <input type="date" class="form-control form-control-sm" id="fechaNacimientoInput" formControlName="birthDate" placeholder="Ingresar Fecha Nacimiento">
+          <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="actorForm.get('birthDate')!.hasError('required') && actorForm.get('birthDate')!.touched">
+            El campo fecha de nacimiento es requerido
+          </div>
+        </div>
+        <div class="form-group mx-sm-3 mb-4">
+          <label i18n for="biografiaTextarea">Biografia</label>
+          <textarea class="form-control form-control-sm" id="biografiaTextarea" formControlName="biography" rows="3"></textarea>
+          <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="actorForm.get('biography')!.hasError('required') && actorForm.get('biography')!.touched">
+            El campo biografia es requerido
+          </div>
+          <div i18n class="alert alert-danger alert-dismissible fade show" *ngIf="(actorForm.get('biography')!.hasError('minlength') || actorForm.get('biography')!.hasError('maxlength'))">
+           El tamaño de la biografia debe ser de minimo 2 y maximo 255 caracteres
+         </div>
+        </div>
+      </div>
+        <div class="modal-footer">
+          <button i18n type="button" class="btn" (click)="closePopup()">Cerrar</button>
+          <button i18n type="submit" class="btn btn-primary-custom" [disabled]="!actorForm.valid">Guardar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,39 @@
+<div class="card mb-5 zoom position-relative" >
+  <input type="hidden" name="movie-id" value="{{movie.id}}">
+  <div (click)="showDetail(movie.id)" class="container-card">
+    <img src="{{ movie.poster }}" class="card-img-top" alt="{{ movie.title }}">
+    <div class="card-body bg-card-body">
+      <span class="card-text text-gray-custom d-block title">{{movie.title}}</span>
+      <span class="card-text text-gray-custom d-block release-year">
+      {{movie.releaseDate.substring(0, 4)}} | {{movie.duration}} h
+    </span>
+      <div class="popularity">
+        <span *ngFor="let star of createRange(movie.popularity)">
+          <i class="bi bi-star-fill text-warning d-inline-block"></i>
+        </span>
+        <span *ngFor="let star of createRange(5 - movie.popularity)">
+        <i class="bi bi-star text-warning d-inline-block"></i>
+      </span>
+      </div>
+    </div>
+  </div>
+  <div class="container-fab-button position-absolute">
+    <div class="dropup position-absolute bottom-0 end-0 rounded-circle">
+      <button type="button" class="btn btn-success btn-lg dropdown-toggle hide-toggle" id="btn-options-{{movie.id}}" data-bs-toggle="dropdown" aria-expanded="false" aria-haspopup="true">
+        <i class="fa-solid fa-plus"></i>
+        <span class="visually-hidden">Add Category</span>
+      </button>
+      <ul class="dropdown-menu">
+        <li>
+          <button (click)="openPlatformModal(movie)" type="button" class="btn btn-primary-custom col-12 menu-associate-platform" id="menu-associate-platform-{{movie.id}}" data-bs-toggle="modal" data-bs-target="#platformModal" i18n>
+            Asociar plataforma
+          </button>
+        <li>
+        <button (click)="openActorModal(movie)" type="button" class="btn btn-primary-custom col-12" id="menu-associate-actor" data-bs-toggle="modal" data-bs-target="#actorModal" i18n>
+          Asociar actor
+        </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

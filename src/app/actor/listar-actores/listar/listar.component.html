@@ -1,0 +1,73 @@
+<div class="container-fluid">
+  <div class="filters text-center">
+    <p class="fs-1 fw-bolder" i18n>Listado de actores</p>
+    <div class="row">
+      <div class="col-md-2 col-sm-12">
+        <div class="input-group mb-3">
+          <app-create-actor class="col-12" (refreshListActors)="getActors()"></app-create-actor>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="input-group mb-3">
+          <input type="text" i18n class="form-control" [placeholder]="placeholderBuscarActor" aria-label="Buscar actor" #actorName>
+          <button i18n class="btn btn-primary-custom" id="searchButtonActor" type="button" (click)="getActorsByName(actorName.value)">Buscar</button>
+        </div>
+      </div>
+      <div class="row col-12 col-lg-5 col-md-12 col-sm-12">
+        <div class="col-4 d-flex align-items-center justify-content-end">
+          <p i18n class="text-center fs-4-md fw-bolder">Ordenar por:</p>
+        </div>
+        <div class="col-4">
+          <button i18n id="orderByName" class="btn btn-primary-custom col-12" type="button" (click)="orderByName()">
+              Nombre <i [ngClass]="arrowClassName"></i>
+          </button>
+        </div>
+        <div class="col-4">
+          <button i18n id="orderByCountry" class="btn btn-primary-custom col-12" type="button" (click)="orderByNationality()">
+              Nacionalidad <i [ngClass]="arrowClassNationality"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div *ngIf="actors.length < 1">
+    <div i18n>No hay películas para mostrar que contenga en su nombre <strong>{{actorName.value}}</strong></div>
+  </div>
+  <div *ngIf="actors.length > 0" class="list row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-xs-2">
+    <div *ngFor="let actor of getCurrentPageActors()">
+      <div class="card">
+        <img
+          class="card-img"
+          src="{{ actor.photo }}"
+          alt="{{ actor.name }}"
+        />
+        <div class="card-body">
+          <h5 class="card-title">
+            <blockquote class="blockquote">
+              <h4 class="pb-1 fw-bold">{{ actor.name }}</h4>
+              <footer class="blockquote-footer fw-light">
+                <small>{{actor.nationality}}</small>
+              </footer>
+            </blockquote>
+          </h5>
+          <p i18n class="fs-6 fst-normal fw-normal"><span class="fst-italic fw-bolder fs-2">{{actor.movies.length}}</span> pelicula</p>
+          <button i18n routerLink="/actor/{{actor.id}}" class="btn btn-secondary-custom col-12">Saber mas...</button>
+        </div>
+     </div>
+    </div>
+  </div>
+  <div>
+    <nav>
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <a i18n class="page-link pagination-button" (click)="currentPage = currentPage - 1" tabindex="-1">Siguiente</a>
+        </li>
+        <li class="page-item" [ngClass]="{'active' : currentPage === pageNum }" *ngFor="let pageNum of getPageNumbers()"><a class="page-link" (click)="currentPage = pageNum" >{{pageNum}}</a></li>
+        <li class="page-item">
+          <a i18n class="page-link pagination-button" (click)="currentPage = currentPage + 1">Anterior</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+

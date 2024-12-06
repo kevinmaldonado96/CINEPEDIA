@@ -1,0 +1,45 @@
+<div
+  class="modal fade"
+  id="platformModal"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="exampleModalLabel"><span i18n>Asociar plataforma a la película </span><span class="title-movie">{{movie.title}}</span></h4>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          #closeBtn
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12">
+            <input type="text" class="form-control" [placeholder]="placeholderPlatformFilter" aria-label="Película favorita" aria-describedby="button-addon2" [(ngModel)] = "search" (keyup)="searchPlatform(search)">
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <select class="form-select" size="15" aria-label="size 3 select example">
+              <option *ngFor="let platform of filteredPlatform" value="{{platform.id}}" id="option-list-platform" class="mt-2 option-list option-list-platform" (click)="getIdPlatformSelected($event)">{{platform.name}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" i18n>Cerrar</button>
+        <button type="button" id="btn-associate-platform" class="btn btn-primary" (click)="associatePlatform(idPlatformSelected,movie.id)" i18n>
+          Asociar plataforma
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

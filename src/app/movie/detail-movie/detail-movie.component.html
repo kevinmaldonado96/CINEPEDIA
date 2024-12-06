@@ -1,0 +1,90 @@
+<div id="container-detail-movie">
+  <div class="overlay"></div>
+</div>
+
+<div class="row">
+  <div class="col-12 mt-2">
+    <span class=" back-arrow-left" (click)="backToMovies()"><i class="bi bi-arrow-left text-gray-custom arrow-size"></i></span>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12 col-lg-4">
+    <h2 class="text-center text-gray-custom fw-bold" id="title-movie">{{movie.title}}</h2>
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col-12 col-lg-10">
+    <mat-tab-group >
+      <mat-tab label="{{extras}}" id="extras">
+        <div class="row mt-4">
+          <div class="col-12">
+            <img src="{{movie.poster}}" alt="{{movie.title}}" >
+          </div>
+          <div class="col-12">
+            <span class="fs-6 fst-normal trailer-text text-gray-custom" i18n>No te pierdas el trailer</span>
+          </div>
+        </div>
+      </mat-tab>
+      <mat-tab label="{{detail}}" id="detail">
+        <div class="row mt-4">
+          <div class="col-6 col-lg-3">
+            <div>
+              <span class="d-block fw-bold text-gray-custom mt-2" i18n>Duración</span>
+              <span class="d-block text-gray-custom">{{movie.duration}} h</span>
+            </div>
+            <div>
+              <span class="d-block fw-bold text-gray-custom mt-2" i18n>Estreno</span>
+              <span class="d-block text-gray-custom" id="release-date">{{movie.releaseDate |  date:'MM - dd - yyyy'}}</span>
+            </div>
+            <div>
+              <span class="d-block fw-bold text-gray-custom mt-2" i18n>Popularidad</span>
+              <span *ngFor="let star of popularity">
+                <i class="bi bi-star-fill text-warning d-inline-block" *ngIf= "star == 1"></i>
+                <i class="bi bi-star text-warning d-inline-block" *ngIf= "star == 0"></i>
+              </span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <span class="d-block fw-bold text-gray-custom mt-2" i18n>Director</span>
+            <span class="d-block fw-bold text-gray-custom mt-2">{{movie.director.name}}</span>
+          </div>
+          <div class="col-6 col-lg-3">
+            <span class="d-block fw-bold text-gray-custom mt-2" i18n>Actores</span>
+            <span class="d-block text-gray-custom list-actors" *ngFor="let actor of movie.actors">
+              {{actor.name}}
+            </span>
+            <div>
+              <span class="d-block"></span>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3">
+            <span class="d-block fw-bold text-gray-custom mt-2" i18n>Plataformas</span>
+            <span class="d-block text-gray-custom list-platforms" *ngFor="let platform of movie.platforms">
+              {{platform.name}}
+            </span>
+          </div>
+        </div>
+      </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
+<hr class="mt-5">
+<div class="row mt-5">
+    <span class="d-block text-gray-custom fw-bold" i18n>Comentarios</span>
+  <div class="col-12 mt-3">
+    <div class="d-block review-container" *ngFor="let review of movie.reviews">
+      <span class="d-block text-gray-custom">
+        {{review.creator}}
+      </span>
+      <div class="d-block">
+        <span *ngFor="let star of createRange(review.score)">
+          <i class="bi bi-star-fill text-warning d-inline-block" *ngIf= "star == 1"></i>
+          <i class="bi bi-star text-warning d-inline-block" *ngIf= "star == 0"></i>
+        </span>
+      </div>
+      <p class="d-block text-gray-custom">
+        {{review.text}}
+      </p>
+    </div>
+  </div>
+</div>

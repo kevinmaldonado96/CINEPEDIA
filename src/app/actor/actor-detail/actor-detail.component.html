@@ -1,0 +1,82 @@
+<div class="container-fluid">
+  <div class="row p-3">
+    <div class="my-2 d-block d-md-none">
+      <button type="button" i18n class="btn btn-primary-custom col-12" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Filtros
+      </button>
+    </div>
+    <div class="col-md-3 d-none d-md-block">
+      <app-actor-detail-filter [actorId]="idActor"
+        (selectedActor)="getActorFromFilters($event)"></app-actor-detail-filter>
+    </div>
+    <div class="col-8 bg-body p-3 border border-dark-subtle">
+      <h1 i18n class="text-secondary-custom border-bottom border-dark-subtle mb-3"><b>Información</b> del actor</h1>
+      <div class="card mb-3 bg-primary-color actor-info" style="max-width: 640px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="{{actorDetail?.photo}}" class="img-fluid rounded-start card-img" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body text-palette-1">
+              <h3 class="card-title fw-bolder mb-3">{{actorDetail?.name}}</h3>
+              <h6 class="fw-normal"><i class="fas fa-fw fa-globe-americas"></i> {{actorDetail?.nationality}}</h6>
+              <h6 class="fw-normal"><i class="fas fa-fw fa-calendar"></i> {{actorDetail?.birthDate | date :'mediumDate' }}
+              </h6>
+              <h6 class="fw-normal"><i class="fas fa-fw fa-user"></i> {{actorDetail?.biography}}</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-5">
+        <h1 class="text-secondary-custom border-bottom border-dark-subtle mb-3"><b i18n>Peliculas</b></h1>
+        <div class="row movie-list">
+          <div class="col-md-12">
+            <div id="carouselMovies" class="carousel slide" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item" *ngFor="let movie of actorDetail?.movies; let i = index"
+                  [class.active]="i == 0 || i % 6 == 0">
+                  <div class="row">
+                    <div class="col-4" *ngFor="let m of actorDetail?.movies?.slice(i, i + 6)">
+                      <div class="card card-movie">
+                        <img [src]="m.poster" class="card-img-top card-img-movie" alt="Poster de la película">
+                        <div class="card-body card-body-movie">
+                          <h5 class="card-title">{{ m.title }}</h5>
+                          <p class="card-text">{{ m.releaseDate | date:'longDate' }}</p>
+                          <button i18n class="btn btn-secondary-custom col-12">Ver detalle</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselMovies" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span i18n class="sr-only">Anterior</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselMovies" role="button" data-slide="next"
+                >
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span i18n class="sr-only">Siguiente</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-fullscreen-sm-down">
+    <div class="modal-content">
+      <div class="modal-header bg-primary-color text-light">
+        <h1 class="modal-title fs-5" i18n id="exampleModalLabel">Filtros</h1>
+        <button type="button" #closeBtn class="btn btn-secondary-custom" data-bs-dismiss="modal" aria-label="Close"><i
+            class="fas fa-times" color="light"></i></button>
+      </div>
+      <app-actor-detail-filter [actorId]="idActor"
+      (selectedActor)="getActorFromFilters($event)"></app-actor-detail-filter>
+    </div>
+  </div>
+</div>
+

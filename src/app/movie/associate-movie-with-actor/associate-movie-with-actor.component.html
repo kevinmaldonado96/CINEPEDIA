@@ -1,0 +1,45 @@
+<div
+  class="modal fade"
+  id="actorModal"
+  tabindex="-1"
+  aria-labelledby="staticBackdropLabel"
+  aria-hidden="true"
+  data-bs-backdrop="static"
+  data-bs-keyboard="false"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="modalActorLabel"><span i18n>Asociar actor a la película </span><span id="title-movie">{{movie.title}}</span></h4>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+          #closeBtn
+        ></button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12">
+            <input type="text" class="form-control" [placeholder]="placeholderFilterActor" aria-label="Película favorita" aria-describedby="button-addon2" [(ngModel)] = "search" (keyup)="searchActor(search)" i18n>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <select class="form-select" size="15" aria-label="size 3 select example">
+              <option *ngFor="let actor of filteredActor" value="{{actor.id}}" id="option-actor-{{movie.id}}" class="mt-2 option-list option-list-actor" (click)="getIdActorSelected($event)">{{actor.name}}</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" i18n>Cerrar</button>
+        <button type="button" class="btn btn-primary" id="btn-associate-actor" (click)="associateActor(idActorSelected,movie.id)" i18n>
+          Asociar actor
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

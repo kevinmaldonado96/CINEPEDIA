@@ -1,0 +1,45 @@
+<div class="row">
+  <div class="col-12 text-center mt-1 mt-3 mb-5">
+    <h1 class="fs-1 fw-bold" i18n>Películas</h1>
+  </div>
+</div>
+<div class="row mb-5">
+  <div class="col-12 col-sm-7 col-md-6 mb-2 mb-sm-none">
+      <input type="text" class="form-control" id="filter-movie" [placeholder]="placeholderSearchMovie" aria-label="Película favorita" aria-describedby="button-addon2" [(ngModel)] = "search" (keyup)="searchMovie(search)">
+  </div>
+  <div class="col-12 col-sm-5 col-md-6">
+        <div class="dropdown">
+          <button class="btn btn-secondary-custom dropdown-toggle" type="button" id="ddSearchMovie" data-bs-toggle="dropdown" aria-expanded="false">
+            {{selectedValue}}
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li class="dropdown-item" *ngFor="let filter of filters" (click)="selectValue(filter)">{{ filter.name }}</li>
+          </ul>
+        </div>
+  </div>
+</div>
+
+<app-associate-platform-movie (associatedIds) = "getIdPlatformAssociatedToMovie($event)"></app-associate-platform-movie>
+<app-associate-movie-with-actor (associatedIds)="getIdActorAssociatedToMovie($event)"></app-associate-movie-with-actor>
+
+<div *ngIf="filteredMovies.length < 1 else cardMovie">
+  <div class="without-movies">No hay películas para mostrar que contenga en su nombre <strong>{{search}}</strong></div>
+</div>
+
+<ng-template #emptyLoadingTemplate></ng-template>
+<ng-template #cardMovie>
+  <div class="row row-cols-1 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 d-flex justify-content-between">
+    <app-card-movie
+      *ngFor="let movie of filteredMovies" [movie] = "movie"
+      (parentOpenPlatformModal)="openPlatformModal(movie)"
+      (parentOpenActorModal)="openActorModal(movie)"
+      >
+    </app-card-movie>
+  </div>
+  <ngx-loading
+    [show]="loading"
+    [config]="{ backdropBorderRadius: '10px', fullScreenBackdrop: true, animationType:animationTypes.circle,
+    primaryColour: '#9A88D1', secondaryColour: '#4e2e54'}"
+    [template]="emptyLoadingTemplate">
+  </ngx-loading>
+</ng-template>

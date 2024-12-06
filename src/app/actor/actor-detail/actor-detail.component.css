@@ -1,0 +1,59 @@
+.title-actor {
+  border-bottom: 0.5px solid var(--primary-color);
+}
+
+.img-actor-contact{
+  height: 3vw;
+  width: 3vw;
+  float: left;
+  padding: 3px;
+}
+
+.card-img-movie {
+  width: 100%;
+  height: 13vw;
+  object-fit: cover;
+}
+
+.card-img-actor {
+  width: 100%;
+  height: 17.5vw;
+  object-fit: cover;
+}
+
+.card-actor {
+  margin: 0.5rem;
+  width: 100rem;
+  height: 15rem;
+  background-color: var(--primary-color);
+}
+
+.card-movie {
+  margin: 0.5rem;
+  width: 14rem;
+  background-color: var(--primary-color);
+}
+
+.card-body-actor,
+.blockquote-footer {
+  color: var(--palette-1);
+}
+
+.card-body-movie,
+.blockquote-footer {
+  color: var(--palette-1);
+}
+
+.d-inline-block{
+  color: var(--primary-color);
+}
+
+.my-1 {
+  background-color: var(--primary-color);
+}
+
+.pagination-button{
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--rgb-gray-text)
+}

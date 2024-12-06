@@ -1,0 +1,83 @@
+<div>
+  <div class="filters text-center">
+    <p class="fs-1 fw-bolder" i18n>Listado de directores</p>
+    <div class="row">
+      <div class="col-md-2 col-sm-12">
+        <div class="input-group mb-3">
+          <app-director-create class="col-12" (reloadDirectors)="getDirectorsList()"></app-director-create>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Buscar director" i18n-placeholder aria-label="Buscar director"
+            [(ngModel)]="directorSearchName">
+          <button class="btn btn-secondary-custom" (click)="search(directorSearchName)" type="button" id="searchBtn" i18n>Buscar</button>
+        </div>
+      </div>
+      <div class="row col-md-5 col-sm-12 m-0">
+        <div class="col-md-4 col-sm-6 d-md-flex align-items-center justify-content-end">
+          <p class="text-center fs-4-md fw-bolder" i18n>Ordenar por:</p>
+        </div>
+        <div class="col-md-4 col-sm-6 mt-1">
+
+          <button class="btn btn-secondary-custom col-12" (click)="sortByName()" type="button" id="orderBtnName" i18n>
+            Nombre <span [ngClass]="getIcon(nameSort)"></span>
+          </button>
+        </div>
+        <div class="col-md-4 col-sm-6 mt-1">
+          <button class="btn btn-secondary-custom col-12" (click)="sortByContry()" type="button" id="orderBtnCountry" i18n>
+            Pais <span [ngClass]="getIcon(countrySort)"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="list row">
+    <div *ngIf="directorsFiltered.length == 0 && !loading">
+      <div class="text-danger" i18n>No se encontraron directores</div>
+    </div>
+    <div *ngFor="let director of getCurrentPageElements()" class="col-md-3 col-sm-12">
+      <div class="card">
+        <img class="card-img" alt="Foto del director {{director.name}}" src="{{ director.photo }}">
+        <div class="card-body">
+          <h5 class="card-title">
+            <blockquote class="blockquote">
+              <h4 class="pb-1 fw-bold">{{ director.name }}</h4>
+              <footer class="blockquote-footer fw-light">
+                <small>{{director.nationality}}</small>
+              </footer>
+            </blockquote>
+          </h5>
+          <p><span class="fst-italic fw-bolder fs-2">{{director.totalMovies}}</span>
+            <small class="fs-6 fst-normal fw-normal" i18n>
+              pelicula/s
+            </small>
+          </p>
+          <button type="button" class="btn btn-secondary-custom col-12" (click)="showDetail(director.id)" i18n>Saber
+            mas...</button>
+        </div>
+      </div>
+    </div>
+    <ngx-loading [show]="loading" [config]="{ backdropBorderRadius: '10px', fullScreenBackdrop: true, animationType:animationTypes.circle,
+    primaryColour: '#9A88D1', secondaryColour: '#4e2e54'}" [template]="emptyLoadingTemplate">
+    </ngx-loading>
+  </div>
+  <div *ngIf="totalPages > 1">
+    <nav>
+      <ul class="pagination justify-content-center">
+        <li class="page-item">
+          <button class="page-link pagination-button" (click)="currentPage = currentPage - 1" tabindex="-1"
+            [disabled]="currentPage === 1" i18n>Anterior</button>
+        </li>
+        <li class="page-item" [ngClass]="{'active' : currentPage === pageNum }"
+          *ngFor="let pageNum of getPageNumbers()"><a class="page-link" (click)="currentPage = pageNum">{{pageNum}}</a>
+        </li>
+        <li class="page-item">
+          <button class="page-link pagination-button" (click)="currentPage = currentPage + 1"
+            [disabled]="currentPage === totalPages" i18n>Siguiente</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+<ng-template #emptyLoadingTemplate></ng-template>

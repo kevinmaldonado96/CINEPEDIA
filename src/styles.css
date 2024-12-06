@@ -1,0 +1,95 @@
+:root {
+  --primary-color: #2a2539;
+  --primary-hover: #322c44;
+  --secondary-color: #4e2e54;
+  --secondary-hover: #412646;
+  --palette-1: #9a88d1;
+  --palette-2: #625685;
+  --palette-3: #442e85;
+  --palette-4: #2a1d52;
+  --palette-5: #f3efff;
+  --gray-text: #c9c9c9;
+  --rgb-gray-text: rgb(201, 201, 201);
+  --rgb-primary-color: rgb(42, 37, 57);
+}
+
+.overlay{
+  background-color: rgba(68, 46, 133, 0.8);
+}
+
+.btn-primary-custom {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--primary-color);
+  --bs-btn-border-color: var(--primary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--primary-hover);
+  --bs-btn-hover-border-color: var(--primary-hover);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--primary-hover);
+  --bs-btn-active-border-color: var(--primary-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--primary-color);
+  --bs-btn-disabled-border-color: var(--primary-color);
+}
+
+.btn-secondary-custom {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--secondary-color);
+  --bs-btn-border-color: var(--secondary-color);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--secondary-hover);
+  --bs-btn-hover-border-color: var(--secondary-hover);
+  --bs-btn-focus-shadow-rgb: 49, 132, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--secondary-hover);
+  --bs-btn-active-border-color: var(--secondary-color);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: var(--secondary-color);
+  --bs-btn-disabled-border-color: var(--secondary-color);
+}
+
+.pagination {
+  --bs-pagination-active-bg: var(--secondary-color);
+  --bs-pagination-active-border-color: var(--secondary-color);
+  --bs-pagination-color: var(--secondary-color);
+}
+
+.text-primary-custom {
+  color: var(--primary-color);
+}
+
+.text-gray-custom {
+  color: var(--gray-text);
+}
+
+.text-secondary-custom {
+  color: var(--secondary-color);
+}
+
+.text-palette-1{
+  color: var(--palette-1);
+}
+
+body:before {
+  content: "";
+  background-image: url("assets/img/background.png");
+  opacity: 0.3;
+  position: fixed;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.bg-primary-color {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary-color {
+  background-color: var(--secondary-color);
+}

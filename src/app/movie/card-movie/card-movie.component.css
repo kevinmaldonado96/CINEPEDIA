@@ -1,0 +1,58 @@
+.bg-card-body {
+  background-color: var(--primary-color);
+}
+
+.container-fab-button{
+  bottom: 5px;
+  right: 5px;
+  z-index: 1000;
+  border-radius: 50%;
+}
+
+.dropup > button{
+  border-radius: 50%;
+  font-size: 1.8em;
+  background-color: var(--palette-5);
+  color: var(--primary-color);
+}
+
+.dropup .hide-toggle.dropdown-toggle::after {
+  display: none !important;
+}
+
+.mat-menu-trigger {
+  height: 48px;
+  width: 48px;
+  font-size: 3em;
+  line-height: normal;
+  background-color: var(--palette-5);
+}
+
+.text-gray-custom {
+  font-size: 0.80em;
+  padding: 2px 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.zoom:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  -webkit-box-shadow: 0px 0px 11px 2px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 11px 2px rgba(0,0,0,1);
+  box-shadow: 0px 0px 11px 2px rgba(0,0,0,1);
+}
+
+@media (max-width: 576px){
+  .card-dimension-custom {
+    width: 100%;
+    height: auto;
+  }
+}
+

@@ -1,0 +1,108 @@
+<!-- Button  -->
+<button type="button" id="openModalCreateBtn" class="btn btn-primary-custom col-12" data-bs-toggle="modal" data-bs-target="#exampleModal" i18n>
+  Crear director
+</button>
+
+<!-- Modal Create Form-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <form [formGroup]="directorForm" id="formCreateDirector" (ngSubmit)="!directorForm.invalid && createDirector(directorForm.value)">
+        <div class="modal-header bg-primary-color">
+          <h1 class="modal-title text-light fs-5" id="exampleModalLabel" i18n>Crear director</h1>
+          <button type="button" #closeBtn class="btn-close btn-close-white" data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-start">
+          <!--Name-->
+          <div class="form-group mx-sm-3 mb-4">
+            <label for="name" i18n>Nombre *</label>
+            <input novalidate id="name" class="form-control form-control-sm" formControlName="name" placeholder="Ingresar Nombre" i18n-placeholder />
+            <small class="text-danger fst-italic" *ngIf="
+                directorForm.get('name')!.hasError('required') &&
+                directorForm.get('name')!.touched
+              " i18n>
+              - El campo nombre es requerido
+            </small>
+            <small class="text-danger fst-italic" *ngIf="directorForm.get('name')!.hasError('minlength')" i18n>
+              - El campo nombre debe tener mas de 2 caracteres
+            </small>
+            <small class="text-danger fst-italic" *ngIf="directorForm.get('name')!.hasError('maxLength')" i18n>
+              - El campo nombre no debe tener mas de 100 caracteres
+            </small>
+          </div>
+
+          <!--Image-->
+          <div class="form-group mx-sm-3 mb-4">
+            <label for="image" i18n>Foto *</label>
+            <input novalidate id="photo" class="form-control form-control-sm" formControlName="photo"
+              placeholder="Ingresar URL de la foto del director" i18n-placeholder/>
+            <small class="text-danger fst-italic" *ngIf="
+                directorForm.get('photo')!.hasError('required') &&
+                directorForm.get('photo')!.touched
+              " i18n>
+              - El campo foto es requerido
+            </small>
+            <small class="text-danger fst-italic"
+              *ngIf="directorForm.get('photo')!.hasError('pattern') && directorForm.get('photo')!.touched" i18n>
+              - El campo foto debe ser una url valida
+            </small>
+          </div>
+
+          <!--nationality-->
+          <div class="form-group mx-sm-3 mb-4">
+            <label for="nationality" i18n>Nacionalidad *</label>
+            <input novalidate id="nationality" class="form-control form-control-sm" formControlName="nationality"
+              placeholder="Ingresar nacionalidad" i18n-placeholder/>
+            <small class="text-danger fst-italic" *ngIf="
+                directorForm.get('nationality')!.hasError('required') &&
+                directorForm.get('nationality')!.touched
+              " i18n>
+              - El campo nacionalidad es requerido
+            </small>
+            <small class="text-danger fst-italic" *ngIf="directorForm.get('nationality')!.hasError('minlength')" i18n>
+              - El campo nacionalidad debe tener mas de 2 caracteres
+            </small>
+            <small class="text-danger fst-italic" *ngIf="directorForm.get('nationality')!.hasError('maxLength')" i18n>
+              - El campo nacionalidad no debe tener mas de 100 caracteres
+            </small>
+          </div>
+
+          <!--Birth Date-->
+          <div class="form-group mx-sm-3 mb-4">
+            <label for="birthDate" i18n>Fecha de nacimiento *</label>
+            <input type="date" novalidate id="birthDate" class="form-control form-control-sm" formControlName="birthDate"
+              placeholder="Ingresar fecha de nacimiento" i18n-placeholder/>
+            <small class="text-danger fst-italic"
+              *ngIf="directorForm.get('birthDate')!.hasError('required') && directorForm.get('birthDate')!.touched" i18n>
+              - El campo fecha de nacimiento es requerido
+            </small>
+          </div>
+
+          <!--Description-->
+          <div class="form-group mx-sm-3 mb-4">
+            <label for="biography" i18n>Biografia *</label>
+            <textarea novalidate id="biography" class="form-control form-control-sm" formControlName="biography"
+              placeholder="Ingresar biografia" i18n-placeholder rows="3"></textarea>
+            <small class="text-danger fst-italic" *ngIf="
+                directorForm.get('biography')!.hasError('required') &&
+                directorForm.get('biography')!.touched
+              " i18n>
+              - El campo biografia es requerido
+            </small>
+            <small class="text-danger fst-italic" *ngIf="directorForm.get('biography')!.hasError('minlength')" i18n>
+              - El campo nacionalidad debe tener mas de 2 caracteres
+            </small>
+            <small class="text-danger fst-italic" *ngIf="directorForm.get('biography')!.hasError('maxLength')" i18n>
+              - El campo nacionalidad no debe tener mas de 100 caracteres
+            </small>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn" (click)="closeModal()" i18n>Cancelar</button>
+          <button type="submit" class="btn btn-primary-custom" [disabled]="!directorForm.valid" i18n>Crear director</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

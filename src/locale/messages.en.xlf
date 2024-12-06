@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en-US" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="ngb.alert.close" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/alert/alert.ts</context>
+          <context context-type="linenumber">81,82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.slide-number" datatype="html">
+        <source> Slide <x id="INTERPOLATION" equiv-text="/**
+   * If `"/> of <x id="INTERPOLATION_1" equiv-text="e switching whe"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">157,162</context>
+        </context-group>
+        <note priority="1" from="description">Currently selected slide number read by screen reader</note>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.previous" datatype="html">
+        <source>Previous</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">191</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.carousel.next" datatype="html">
+        <source>Next</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/carousel/carousel.ts</context>
+          <context context-type="linenumber">214</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-month" datatype="html">
+        <source>Select month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.select-year" datatype="html">
+        <source>Select year</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation-select.ts</context>
+          <context context-type="linenumber">74</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.previous-month" datatype="html">
+        <source>Previous month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.datepicker.next-month" datatype="html">
+        <source>Next month</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/datepicker/datepicker-navigation.ts</context>
+          <context context-type="linenumber">69</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first" datatype="html">
+        <source>««</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">252</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous" datatype="html">
+        <source>«</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">273,275</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next" datatype="html">
+        <source>»</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">303</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last" datatype="html">
+        <source>»»</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">322,324</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.first-aria" datatype="html">
+        <source>First</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">340</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.previous-aria" datatype="html">
+        <source>Previous</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">354,355</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.next-aria" datatype="html">
+        <source>Next</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">376,378</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.pagination.last-aria" datatype="html">
+        <source>Last</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/pagination/pagination.ts</context>
+          <context context-type="linenumber">399,401</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.progressbar.value" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="nger&quot;`, `&quot;prima"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/progressbar/progressbar.ts</context>
+          <context context-type="linenumber">68</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.HH" datatype="html">
+        <source>HH</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">141,143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.hours" datatype="html">
+        <source>Hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">165,168</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.MM" datatype="html">
+        <source>MM</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">187,188</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.minutes" datatype="html">
+        <source>Minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">206,208</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-hours" datatype="html">
+        <source>Increment hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">231,233</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-hours" datatype="html">
+        <source>Decrement hours</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">259,261</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-minutes" datatype="html">
+        <source>Increment minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">286,288</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-minutes" datatype="html">
+        <source>Decrement minutes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.SS" datatype="html">
+        <source>SS</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.seconds" datatype="html">
+        <source>Seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.increment-seconds" datatype="html">
+        <source>Increment seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.decrement-seconds" datatype="html">
+        <source>Decrement seconds</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.PM" datatype="html">
+        <source><x id="INTERPOLATION"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.timepicker.AM" datatype="html">
+        <source><x id="INTERPOLATION"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/timepicker/timepicker.ts</context>
+          <context context-type="linenumber">295</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="ngb.toast.close-aria" datatype="html">
+        <source>Close</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">node_modules/src/toast/toast.ts</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8713073708350341933" datatype="html">
+        <source>Buscar</source>
+        <target>Search</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail-filter/actor-detail-filter.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-list/director-list.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-details-filter/director-details-filter.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/listar-actores/listar/listar.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/list-platform/list-platform.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5826720389422256847" datatype="html">
+        <source>Ordenar por:</source>
+        <target>Order by:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail-filter/actor-detail-filter.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-details-filter/director-details-filter.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/listar-actores/listar/listar.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-list/director-list.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/list-platform/list-platform.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1376880499437264822" datatype="html">
+        <source> Nombre <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i [ngClass]=&quot;getIcon(sortName)&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <target> Name <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i [ngClass]=&quot;getIcon(sortName)&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail-filter/actor-detail-filter.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/listar-actores/listar/listar.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/list-platform/list-platform.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1724162867378072245" datatype="html">
+        <source> Pais <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i [ngClass]=&quot;getIcon(sortCountry)&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <target> Country <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i [ngClass]=&quot;getIcon(sortCountry)&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail-filter/actor-detail-filter.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5966747461310629641" datatype="html">
+        <source> Filtros </source>
+        <target> Filters </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail-filter/actor-detail-filter.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail/actor-detail.component.html</context>
+          <context context-type="linenumber">4,6</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-details-filter/director-details-filter.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-detail/director-detail.component.html</context>
+          <context context-type="linenumber">3,5</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8051638112109275902" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Información<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> del actor</source>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Information<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> of the actor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail/actor-detail.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7607208936794683365" datatype="html">
+        <source>Ver detalle</source>
+        <target>Watch detail</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail/actor-detail.component.html</context>
+          <context context-type="linenumber">45</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-detail/director-detail.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="452830638458584000" datatype="html">
+        <source>Anterior</source>
+        <target>Back</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail/actor-detail.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/listar-actores/listar/listar.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-list/director-list.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/list-platform/list-platform.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-details-filter/director-details-filter.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3237447972400589452" datatype="html">
+        <source>Siguiente</source>
+        <target>Next</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail/actor-detail.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/listar-actores/listar/listar.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-list/director-list.component.html</context>
+          <context context-type="linenumber">77</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/list-platform/list-platform.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-details-filter/director-details-filter.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7532911879405106084" datatype="html">
+        <source>Filtros</source>
+        <target>Filters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail/actor-detail.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-detail/director-detail.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2041585957151547075" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Información<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> del director</source>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Director's<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/> information</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-detail/director-detail.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4598488591691837246" datatype="html">
+        <source><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Peliculas<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></source>
+        <target><x id="START_BOLD_TEXT" ctype="x-b" equiv-text="&lt;b&gt;"/>Movies<x id="CLOSE_BOLD_TEXT" ctype="x-b" equiv-text="&lt;/b&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-detail/director-detail.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6628781832515078057" datatype="html">
+        <source> Crear Actor</source>
+        <target> Create Actor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">1,3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6400695610860048724" datatype="html">
+        <source>Crear Actor</source>
+        <target>Create Actor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5357661269973482487" datatype="html">
+        <source>Nombre</source>
+        <target>Name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/create-platform/create-platform.component.html</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1869294918319072092" datatype="html">
+        <source> El campo nombre es requerido </source>
+        <target> The name field is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/create-platform/create-platform.component.html</context>
+          <context context-type="linenumber">22,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4838046547980213141" datatype="html">
+        <source> El tamaño del nombre debe ser de minimo 2 y maximo 100 caracteres </source>
+        <target> The size of the name must be a minimum of 2 and a maximum of 100 characters </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">25,27</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/create-platform/create-platform.component.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3908116726986414713" datatype="html">
+        <source>Foto</source>
+        <target>Photo</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1835862519628598914" datatype="html">
+        <source> El campo foto es requerido </source>
+        <target> The photo field is required </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2794188322774077555" datatype="html">
+        <source> El tamaño de la foto debe ser de minimo 2 y maximo 100 caracteres </source>
+        <target> The size of the photo must be a minimum of 2 and a maximum of 100 characters </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">35,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5824485735575983604" datatype="html">
+        <source> El campo foto debe ser un url valida </source>
+        <target> The photo field must be a valid url </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">38,40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2528954873905403477" datatype="html">
+        <source>Nacionalidad</source>
+        <target>Nationality</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3961390653776850535" datatype="html">
+        <source> El campo nacionalidad es requerido </source>
+        <target> The nationality field is required </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">45,47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3630664028014565388" datatype="html">
+        <source> El tamaño de la nacionalidad debe ser de minimo 2 y maximo 100 caracteres </source>
+        <target> The size of the nationality must be a minimum of 2 and a maximum of 100 characters </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">48,50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5663773212361906083" datatype="html">
+        <source>Fecha de nacimiento</source>
+        <target>FBirthdate</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8812405942746861999" datatype="html">
+        <source> El campo fecha de nacimiento es requerido </source>
+        <target> The date of birth field is required </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">55,57</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8880409561173904638" datatype="html">
+        <source>Biografia</source>
+        <target>Biography</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">60</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5195193391877567303" datatype="html">
+        <source> El campo biografia es requerido </source>
+        <target> The biography field is required </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">62,64</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6031396172047491337" datatype="html">
+        <source> El tamaño de la biografia debe ser de minimo 2 y maximo 255 caracteres </source>
+        <target> The size of the biography must be a minimum of 2 and a maximum of 255 characters </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">65,67</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4798961227159743968" datatype="html">
+        <source>Cerrar</source>
+        <target>Close</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/create-platform/create-platform.component.html</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/associate-movie-with-actor/associate-movie-with-actor.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1372173599787735409" datatype="html">
+        <source>Guardar</source>
+        <target>Save</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/create-actor/create-actor.component.html</context>
+          <context context-type="linenumber">72</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/create-platform/create-platform.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8086802500456635169" datatype="html">
+        <source>Buscar director</source>
+        <target>Search director</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-details-filter/director-details-filter.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-list/director-list.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4361061700644631463" datatype="html">
+        <source> Nombre <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span [ngClass]=&quot;getIcon(nameSort)&quot;&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target> Name <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span [ngClass]=&quot;getIcon(nameSort)&quot;&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-details-filter/director-details-filter.component.html</context>
+          <context context-type="linenumber">16,17</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-list/director-list.component.html</context>
+          <context context-type="linenumber">23,24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4154789183962583945" datatype="html">
+        <source> Pais <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span [ngClass]=&quot;getIcon(countrySort)&quot;&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target> Country <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span [ngClass]=&quot;getIcon(countrySort)&quot;&gt;"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-details-filter/director-details-filter.component.html</context>
+          <context context-type="linenumber">21,22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-list/director-list.component.html</context>
+          <context context-type="linenumber">28,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2229959501258497167" datatype="html">
+        <source>No se encontraron directores</source>
+        <target>No directors found</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-details-filter/director-details-filter.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-list/director-list.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1160842905885261832" datatype="html">
+        <source> pelicula/s </source>
+        <target> movie/s </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-list/director-list.component.html</context>
+          <context context-type="linenumber">52,54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1539150298516983425" datatype="html">
+        <source>Listado de directores</source>
+        <target>Directors list</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-list/director-list.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2492386876163106575" datatype="html">
+        <source>Listado de actores</source>
+        <target>actors list</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/listar-actores/listar/listar.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8592900247322762130" datatype="html">
+        <source> Nacionalidad <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i [ngClass]=&quot;arrowClassNationality&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></source>
+        <target> Nationality <x id="START_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;i [ngClass]=&quot;arrowClassNationality&quot;&gt;"/><x id="CLOSE_ITALIC_TEXT" ctype="x-i" equiv-text="&lt;/i&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/listar-actores/listar/listar.component.html</context>
+          <context context-type="linenumber">26,27</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7015179236110936870" datatype="html">
+        <source>No hay películas para mostrar que contenga en su nombre <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{actorName.value}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>There are no movies to show that contain in their name <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{actorName.value}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/listar-actores/listar/listar.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6447011054826506916" datatype="html">
+        <source><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;fst-italic fw-bolder fs-2&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{actor.movies.length}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> pelicula</source>
+        <target><x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span class=&quot;fst-italic fw-bolder fs-2&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{actor.movies.length}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/> movie</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/listar-actores/listar/listar.component.html</context>
+          <context context-type="linenumber">53</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2540911605687705182" datatype="html">
+        <source>Saber mas...</source>
+        <target>Know more...</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/listar-actores/listar/listar.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-list/director-list.component.html</context>
+          <context context-type="linenumber">56,57</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/list-platform/list-platform.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1346535248268935097" datatype="html">
+        <source> Crear Plataforma</source>
+        <target>Create Platform</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/create-platform/create-platform.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="912806334284345043" datatype="html">
+        <source>Crear Plataforma</source>
+        <target>Create Platform</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/create-platform/create-platform.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8308045076391224954" datatype="html">
+        <source>Url</source>
+        <target>Url</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/create-platform/create-platform.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4846764630381626639" datatype="html">
+        <source>El campo url es requerido</source>
+        <target>The url field is required</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/create-platform/create-platform.component.html</context>
+          <context context-type="linenumber">35,37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4141606865949472312" datatype="html">
+        <source>El tamaño de la url debe ser de minimo 2 y maximo 100 caracteres</source>
+        <target>The size of the url must be a minimum of 2 and a maximum of 100 characters</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/create-platform/create-platform.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5476796383997653659" datatype="html">
+        <source>El campo url debe ser un url valida </source>
+        <target>The url field must be a valid url</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/create-platform/create-platform.component.html</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3243380073842376059" datatype="html">
+        <source>Listado de plataformas</source>
+        <target>platform list</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/list-platform/list-platform.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4756111840790207018" datatype="html">
+        <source>No hay plataformas para mostrar que contenga en su nombre <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{platformName.value}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></source>
+        <target>There are no platforms to display that contain in their name <x id="START_TAG_STRONG" ctype="x-strong" equiv-text="&lt;strong&gt;"/><x id="INTERPOLATION" equiv-text="{{platformName.value}}"/><x id="CLOSE_TAG_STRONG" ctype="x-strong" equiv-text="&lt;/strong&gt;"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/platform/list-platform/list-platform.component.html</context>
+          <context context-type="linenumber">29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2377446466975145219" datatype="html">
+        <source>Peliculas</source>
+        <target>Movies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/actor/actor-detail/actor-detail.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="2737502712785481915" datatype="html">
+        <source>Actores</source>
+        <target>Actors</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/navbar/navbar.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+         <context-group purpose="location">
+           <context context-type="sourcefile">src/app/movie/detail-movie/detail-movie.component.html</context>
+           <context context-type="linenumber">52</context>
+         </context-group>
+      </trans-unit>
+      <trans-unit id="3462631737557320519" datatype="html">
+        <source>Plataformas</source>
+        <target>Platforms</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/navbar/navbar.component.html</context>
+          <context context-type="linenumber">31</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/detail-movie/detail-movie.component.html</context>
+          <context context-type="linenumber">61</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="409446866153295300" datatype="html">
+        <source>Directores</source>
+        <target>Directors</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/menu/navbar/navbar.component.html</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3730745555233111085" datatype="html">
+        <source> Crear director</source>
+        <target> Create director</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">2,4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="877015691881824037" datatype="html">
+        <source>Crear director</source>
+        <target>Create director</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5535643325128815202" datatype="html">
+        <source>Nombre *</source>
+        <target>Name *</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7364040183459840729" datatype="html">
+        <source>Ingresar Nombre</source>
+        <target>Enter name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2919779449507506634" datatype="html">
+        <source> - El campo nombre es requerido </source>
+        <target> - The name field is required </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">24,26</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1600199011853989955" datatype="html">
+        <source> - El campo nombre debe tener mas de 2 caracteres </source>
+        <target> - The name field must have more than 2 characters </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">27,29</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1320033268564218297" datatype="html">
+        <source> - El campo nombre no debe tener mas de 100 caracteres </source>
+        <target> - The name field must not have more than 100 characters. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">30,32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1765710522675538552" datatype="html">
+        <source>Foto *</source>
+        <target>Photo *</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">37</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3386167290227170298" datatype="html">
+        <source>Ingresar URL de la foto del director</source>
+        <target>Enter Director's Photo URL</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5916986151215286082" datatype="html">
+        <source> - El campo foto es requerido </source>
+        <target> - The photo field is required </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">43,45</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="604967265974050316" datatype="html">
+        <source> - El campo foto debe ser una url valida </source>
+        <target> - The photo field must be a valid url </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">47,49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1823081226028995044" datatype="html">
+        <source>Nacionalidad *</source>
+        <target>Nationality *</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1368458982480030256" datatype="html">
+        <source>Ingresar nacionalidad</source>
+        <target>Enter nationality</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">56</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4634880376983079892" datatype="html">
+        <source> - El campo nacionalidad es requerido </source>
+        <target> - The nationality field is required </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">60,62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3092954918859575866" datatype="html">
+        <source> - El campo nacionalidad debe tener mas de 2 caracteres </source>
+        <target> - The nationality field must have more than 2 characters </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">63,65</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">93,95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2924193685377635698" datatype="html">
+        <source> - El campo nacionalidad no debe tener mas de 100 caracteres </source>
+        <target> - The nationality field must not have more than 100 characters </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">66,68</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">96,98</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6540789110298521798" datatype="html">
+        <source>Fecha de nacimiento *</source>
+        <target>Birthdate *</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5108237123146827369" datatype="html">
+        <source>Ingresar fecha de nacimiento</source>
+        <target>Enter date of birth</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6356812513685666866" datatype="html">
+        <source> - El campo fecha de nacimiento es requerido </source>
+        <target> - The date of birth field is required </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">77,79</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6325906362759848854" datatype="html">
+        <source>Biografia *</source>
+        <target>Biography *</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">84</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2602784614046012825" datatype="html">
+        <source>Ingresar biografia</source>
+        <target>Enter biography</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">86</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8068455610702157490" datatype="html">
+        <source> - El campo biografia es requerido </source>
+        <target> - The biography field is required </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">90,92</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6402951927316857780" datatype="html">
+        <source>Cancelar</source>
+        <target>Cancel</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/genre/genre-create/genre-create.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/director/director-create/director-create.component.html</context>
+          <context context-type="linenumber">102</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8347415084320292058" datatype="html">
+        <source>Géneros</source>
+        <target>Genres</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/genre/genre-create/genre-create.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7969887029957269223" datatype="html">
+        <source>Crear genero</source>
+        <target>Create genre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/genre/genre-create/genre-create.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/genre/genre-create/genre-create.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5586024858998117395" datatype="html">
+        <source>Genero *</source>
+        <target>Genre *</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/genre/genre-create/genre-create.component.html</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3182291161966899708" datatype="html">
+        <source>Ingresar nombre del nuevo genero</source>
+        <target>Enter new genre name</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/genre/genre-create/genre-create.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6550078945693631934" datatype="html">
+        <source> - El campo genero es requerido </source>
+        <target> - The genre field is required </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/genre/genre-create/genre-create.component.html</context>
+          <context context-type="linenumber">23,25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="967090830279740005" datatype="html">
+        <source> - El campo genero debe tener mas de 2 caracteres </source>
+        <target> - The gender field must have more than 2 characters. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/genre/genre-create/genre-create.component.html</context>
+          <context context-type="linenumber">26,28</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6751596094248623218" datatype="html">
+        <source> - El campo genero no debe tener mas de 100 caracteres </source>
+        <target> - The gender field must not have more than 100 characters. </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/genre/genre-create/genre-create.component.html</context>
+          <context context-type="linenumber">29,31</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1705862489471675289" datatype="html">
+        <source>Genero</source>
+        <target>Genre</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/genre/genre-create/genre-create.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="dialog.actor.create.success" datatype="html">
+        <source>El actor se ha creado con exito</source>
+        <target>The actor has been created successfully</target>
+      </trans-unit>
+      <trans-unit id="dialog.director.create.success" datatype="html">
+        <source>El director se ha creado con exito</source>
+        <target>The director has been created successfully</target>
+      </trans-unit>
+      <trans-unit id="dialog.genre.create.success" datatype="html">
+        <source>El genero se ha creado con exito</source>
+        <target>The genre has been created successfully</target>
+      </trans-unit>
+      <trans-unit id="dialog.interceptor.title.error" datatype="html">
+        <source>Error del lado del servidor</source>
+        <target>Server side error</target>
+      </trans-unit>
+      <trans-unit id="dialog.interceptor.message.error" datatype="html">
+        <source>No hay conexión con el servidor</source>
+        <target>No connection to the server</target>
+      </trans-unit>
+       <trans-unit id="dialog.actor.create.error" datatype="html">
+        <source>Se ha producido un error a la hora de crear el actor, porfavor contacte con el administrador</source>
+        <target>An error occurred while creating the actor, please contact the administrator</target>
+      </trans-unit>
+       <trans-unit id="dialog.requets.solicitude.error" datatype="html">
+        <source>Ocurrió un error al procesar la solicitud, por favor contacte al administrador</source>
+        <target>An error occurred while processing the request, please contact the administratorr</target>
+      </trans-unit>
+      <trans-unit id="dialog.platform.create.success" datatype="html">
+        <source>La plataforma se ha creado con exito</source>
+        <target>The platform has been created successfully</target>
+      </trans-unit>
+       <trans-unit id="dialog.platform.create.error" datatype="html">
+        <source>Error a la hora de crear una plataforma, porfavor contacte con el administrador</source>
+        <target>Error when creating a platform, please contact the administrator</target>
+      </trans-unit>
+       <trans-unit id="placeholder.buscar.actor" datatype="html">
+        <source>Buscar actor</source>
+        <target>Search actor</target>
+      </trans-unit>
+       <trans-unit id="placeholder.buscar.plataforma" datatype="html">
+        <source>Buscar plataforma</source>
+        <target>Search platform</target>
+      </trans-unit>
+      <trans-unit id="placeholder.ingresar.nombre" datatype="html">
+        <source>Ingresar nombre</source>
+        <target>enter name</target>
+      </trans-unit>
+       <trans-unit id="placeholder.ingresar.url" datatype="html">
+        <source>Ingresar url</source>
+        <target>enter url</target>
+      </trans-unit>
+      <trans-unit id="placeholder.ingresar.foto" datatype="html">
+        <source>Ingresar foto</source>
+        <target>Enter photo</target>
+      </trans-unit>
+      <trans-unit id="placeholder.ingresar.nacionalidad" datatype="html">
+        <source>Ingresar nacionalidad</source>
+        <target>Enter nacionality</target>
+      </trans-unit>
+      <trans-unit id="verb.search" datatype="html">
+        <source>Buscar</source>
+        <target>Search</target>
+      </trans-unit>
+      <trans-unit id="verb.movie" datatype="html">
+        <source>película</source>
+        <target>movie</target>
+      </trans-unit>
+      <trans-unit id="verb.movie-plural" datatype="html">
+        <source>películas</source>
+        <target>movies</target>
+      </trans-unit>
+      <trans-unit id="try-later" datatype="html">
+        <source>Inténtalo más tarde</source>
+        <target>Try later</target>
+      </trans-unit>
+      <trans-unit id="subject-actor-single" datatype="html">
+        <source>actor</source>
+        <target>actor</target>
+      </trans-unit>
+      <trans-unit id="subject-actor-plural" datatype="html">
+        <source>actors</source>
+        <target>actors</target>
+      </trans-unit>
+      <trans-unit id="subject-platform-single" datatype="html">
+        <source>plataforma</source>
+        <target>platform</target>
+      </trans-unit>
+      <trans-unit id="subject-platform-plural" datatype="html">
+        <source>plataformas</source>
+        <target>platforms</target>
+      </trans-unit>
+      <trans-unit id="sweet-alert-all-items-assigned" datatype="html">
+        <source>han sido asignados en su totalidad a la película</source>
+        <target>have been all assigned to the movie</target>
+      </trans-unit>
+      <trans-unit id="sweet-alert-assign-success" datatype="html">
+        <source>se ha asociado a la película</source>
+        <target>has been associated with the movie</target>
+      </trans-unit>
+      <trans-unit id="sweet-alert-assign-actor-error" datatype="html">
+        <source>No fué posible asignar actor a la película</source>
+        <target>has been associated with the movie</target>
+      </trans-unit>
+      <trans-unit id="sweet-alert-assign-platform-error" datatype="html">
+        <source>No fué posible asignar actor a la película</source>
+        <target>has been associated with the movie</target>
+      </trans-unit>
+      <trans-unit id="sweet-alert.associate-platform.title" datatype="html">
+        <source>Asociar plataforma a película</source>
+        <target>Associate platform to movie</target>
+      </trans-unit>
+      <trans-unit id="sweet-alert.associate-actor.title" datatype="html">
+        <source>Asociar actor a película</source>
+        <target>Associate actor to movie</target>
+      </trans-unit>
+      <trans-unit id="btn-accept" datatype="html">
+        <source>Aceptar</source>
+        <target>Accept</target>
+      </trans-unit>
+      <trans-unit id="movie-filter.title" datatype="html">
+        <source>Nombre</source>
+        <target>Name</target>
+      </trans-unit>
+      <trans-unit id="movie-filter.duration" datatype="html">
+        <source>Duración</source>
+        <target>Duration</target>
+      </trans-unit>
+      <trans-unit id="movie-filter.rating" datatype="html">
+        <source>Calificación</source>
+        <target>Rating</target>
+      </trans-unit>
+      <trans-unit id="movie-filter.sort-by" datatype="html">
+        <source>--  Ordenar por  --</source>
+        <target>--  Sort by  --</target>
+      </trans-unit>
+      <trans-unit id="movie-filter.sorted-by" datatype="html">
+        <source>Ordenadas por: </source>
+        <target>Sorted by: </target>
+      </trans-unit>
+      <trans-unit id="word.detail.single.pascal-case" datatype="html">
+        <source>Detalle</source>
+        <target>Detail</target>
+      </trans-unit>
+      <trans-unit id="word.extras.plural.pascal-case" datatype="html">
+        <source>Extras</source>
+        <target>Extras</target>
+      </trans-unit>
+      <trans-unit id="word.movie" datatype="html">
+        <source>película</source>
+        <target>movie</target>
+      </trans-unit>
+      <trans-unit id="word.movie.pascal-case" datatype="html">
+        <source>Película</source>
+        <target>Movie</target>
+      </trans-unit>
+      <trans-unit id="sweet-alert.error-message-detail" datatype="html">
+        <source>No fue posible obtener el detalle</source>
+        <target>Was not possible get the movie detail</target>
+      </trans-unit>
+      <trans-unit id="sweet-alert.error-message" datatype="html">
+        <source>No es posible obtener el listado de</source>
+        <target>Does not possible get platform list</target>
+      </trans-unit>
+      <trans-unit id="sweet-alert.not-selected-platform" datatype="html">
+        <source>Por favor seleccione una plataforma de la lista</source>
+        <target>Please, select one platform from list</target>
+      </trans-unit>
+      <trans-unit id="sweet-alert.not-selected-item" datatype="html">
+        <source>Por favor seleccione un elemento de la lista</source>
+        <target>Please, select one element from list</target>
+      </trans-unit>
+      <trans-unit id="1803601354794685574" datatype="html">
+        <source> Asociar plataforma </source>
+        <target>Associate platform</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/card-movie/card-movie.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3635716134137921473" datatype="html">
+        <source> Asociar actor </source>
+        <target>Associate Actor</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/card-movie/card-movie.component.html</context>
+          <context context-type="linenumber">32,34</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/associate-movie-with-actor/associate-movie-with-actor.component.html</context>
+          <context context-type="linenumber">39,41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4079560014288362621" datatype="html">
+        <source>Asociar actor a la película <x id="START_TAG_SPAN" ctype="x-span" equiv-text="&lt;span id=&quot;title-movie&quot;&gt;"/><x id="INTERPOLATION" equiv-text="{{movie.title}}"/><x id="CLOSE_TAG_SPAN" ctype="x-span" equiv-text="&lt;/span&gt;"/></source>
+        <target>Associate actor to the movie </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/associate-movie-with-actor/associate-movie-with-actor.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7748428213153934082" datatype="html">
+        <source>Asociar plataforma a la película </source>
+        <target>Associate platform to the movie </target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/associate-with-platform/associate-with-platform.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4156365614552874151" datatype="html">
+        <source>No te pierdas el trailer</source>
+        <target>don't miss the trailer</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/detail-movie/detail-movie.component.html</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7621423567406868751" datatype="html">
+        <source>Duración</source>
+        <target>Duration</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/detail-movie/detail-movie.component.html</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2381656212158018328" datatype="html">
+        <source>Estreno</source>
+        <target>Release date</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/detail-movie/detail-movie.component.html</context>
+          <context context-type="linenumber">36</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8813215868827259191" datatype="html">
+        <source>Popularidad</source>
+        <target>Rating</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/detail-movie/detail-movie.component.html</context>
+          <context context-type="linenumber">40</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6983326487281744620" datatype="html">
+        <source>Director</source>
+        <target>Director</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/detail-movie/detail-movie.component.html</context>
+          <context context-type="linenumber">48</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3855353884246003882" datatype="html">
+        <source>Comentarios</source>
+        <target>Comments</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/detail-movie/detail-movie.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3123860279116343800" datatype="html">
+        <source>Películas</source>
+        <target>Movies</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/movie/list-movies/list-movies.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
